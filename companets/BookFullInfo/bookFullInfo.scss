@@ -1,0 +1,988 @@
+.bookfullInfo {
+    padding: 20px 20px;
+
+    &__title {
+        padding-bottom: 40px;
+
+        & h2 {
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+
+            color: rgba(70, 60, 116, 0.5);
+
+            & span {
+                color: black;
+            }
+        }
+
+        &__mobil {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: left;
+        gap: 60px;
+
+        &__left {
+            &__card {
+                background: #FFFFFF;
+                box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 60px;
+
+                &__img {
+                    width: 450px;
+                    & img{
+                        width: 450px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        &__rigth {
+            &__about {
+                & h2 {
+                    font-family: 'Merriweather';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    padding-bottom: 20px;
+                    color: #463C74;
+
+                    & span {
+                        color: #0059FB;
+                    }
+                }
+            }
+
+            &__sena {
+                & h3 {
+                    font-family: 'Merriweather';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #463C74;
+                    padding-bottom: 20px;
+                }
+            }
+
+            &__star {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                gap: 40px;
+                padding-bottom: 20px;
+
+                &__flex {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+
+                    & img {
+                        width: 20px;
+                        height: 20px;
+                        display: inline-block;
+                    }
+
+                }
+
+                &__text__mobil {
+                    display: none;
+                }
+            }
+
+            &__opicayne {
+                padding-bottom: 20px;
+
+                & p {
+                    width: 630px;
+                    font-family: 'Merriweather';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #463C74;
+                }
+            }
+
+            &__btn {
+                padding-top: 60px;
+                display: flex;
+                gap: 60px;
+                align-items: center;
+                justify-content: left;
+
+                & button {
+                    padding: 12px 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    border-radius: 8px;
+                    border: none;
+                    font-family: 'Merriweather';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 23px;
+                    letter-spacing: 0.05em;
+
+                    & img {
+                        width: 20px;
+                        height: auto;
+                    }
+
+                    &:first-child {
+                        color: white;
+                        background: #B4D51E;
+                    }
+
+                    &:nth-child(2) {
+                        padding: 12px 30px;
+                        color: #B4D51E;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__body {
+        display: none;
+    }
+}
+
+
+@media (max-width:1200px){
+    .bookfullInfo {
+        padding: 20px 20px;
+    
+        &__title {
+            padding-bottom: 40px;
+    
+            & h2 {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    
+        &__item {
+            gap: 60px;
+    
+            &__left {
+                &__card {
+                    padding: 50px;
+    
+                    &__img {
+                        width: 260px;
+                        & img{
+                            width: 260px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+    
+            &__rigth {
+                &__about {
+                    & h2 {
+                        font-size: 20px;
+                        line-height: 25px;
+                        padding-bottom: 20px;
+                    }
+                }
+    
+                &__sena {
+                    & h3 {
+                        font-size: 20px;
+                        line-height: 25px;
+                        padding-bottom: 20px;
+                    }
+                }
+    
+                &__star {
+                    gap: 40px;
+                    padding-bottom: 20px;
+    
+                    &__flex {
+                        gap: 15px;
+    
+                        & img {
+                            width: 20px;
+                            height: 20px;
+                        }
+    
+                    }
+                }
+    
+                &__opicayne {
+                    padding-bottom: 20px;
+    
+                    & p {
+                        width: 600px;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+    
+                &__btn {
+                    padding-top: 60px;
+                    gap: 60px;
+    
+                    & button {
+                        padding: 12px 20px;
+                        gap: 10px;
+                        border-radius: 8px;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 23px;
+    
+                        & img {
+                            width: 20px;
+                        }
+    
+                        &:first-child {
+                            color: white;
+                            background: #B4D51E;
+                        }
+    
+                        &:nth-child(2) {
+                            padding: 12px 30px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media (max-width:1100px){
+    .bookfullInfo {
+        padding: 20px 20px;
+    
+        &__title {
+            padding-bottom: 40px;
+    
+            & h2 {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    
+        &__item {
+            gap: 60px;
+    
+            &__left {
+                &__card {
+                    padding: 45px;
+    
+                    &__img {
+                        width: 220px;
+                        & img{
+                            width: 220px;
+                        }
+                    }
+                }
+            }
+    
+            &__rigth {
+                &__about {
+                    & h2 {
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding-bottom: 16px;
+                    }
+                }
+    
+                &__sena {
+                    & h3 {
+                        font-size: 16px;
+                        line-height: 20px;
+                        padding-bottom: 16px;
+                    }
+                }
+    
+                &__star {
+                    gap: 30px;
+                    padding-bottom: 16px;
+    
+                    &__flex {
+                        gap: 15px;
+    
+                        & img {
+                            width: 16px;
+                            height: 16px;
+                        }
+    
+                    }
+                }
+    
+                &__opicayne {
+                    padding-bottom: 16px;
+    
+                    & p {
+                        width: 400px;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+    
+                &__btn {
+                    padding-top: 60px;
+                    gap: 60px;
+    
+                    & button {
+                        padding: 12px 20px;
+                        gap: 10px;
+                        border-radius: 8px;
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 23px;
+    
+                        & img {
+                            width: 20px;
+                        }
+    
+                        &:first-child {
+                            color: white;
+                            background: #B4D51E;
+                        }
+    
+                        &:nth-child(2) {
+                            padding: 12px 30px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media (max-width:900px){
+    .bookfullInfo {
+        padding: 20px 20px;
+    
+        &__title {
+            padding-bottom: 40px;
+    
+            & h2 {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    
+        &__item {
+            gap: 50px;
+    
+            &__left {
+                &__card {
+                    padding: 40px;
+    
+                    &__img {
+                        width: 200px;
+                        & img{
+                            width: 200px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+    
+            &__rigth {
+                &__about {
+                    & h2 {
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding-bottom: 16px;
+                    }
+                }
+    
+                &__sena {
+                    & h3 {
+                        font-size: 16px;
+                        line-height: 20px;
+                        padding-bottom: 16px;
+                    }
+                }
+    
+                &__star {
+                    gap: 30px;
+                    padding-bottom: 16px;
+    
+                    &__flex {
+                        gap: 15px;
+    
+                        & img {
+                            width: 16px;
+                            height: 16px;
+                        }
+    
+                    }
+                }
+    
+                &__opicayne {
+                    padding-bottom: 16px;
+    
+                    & p {
+                        width: 360px;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+    
+                &__btn {
+                    padding-top: 20px;
+                    gap: 40px;
+    
+                    & button {
+                        padding: 8px 15px;
+                        gap: 10px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 16px;
+    
+                        & img {
+                            width: 16px;
+                        }
+    
+                        &:first-child {
+                            color: white;
+                            background: #B4D51E;
+                        }
+    
+                        &:nth-child(2) {
+                            padding: 8px 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media (max-width:800px){
+    .bookfullInfo {
+        padding: 20px 20px;
+    
+        &__title {
+            padding-bottom: 40px;
+    
+            & h2 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    
+        &__item {
+            gap: 40px;
+    
+            &__left {
+                &__card {
+                    padding: 30px;
+    
+                    &__img {
+                        width: 170px;
+                        & img{
+                            width: 170px;
+                        }
+                    }
+                }
+            }
+    
+            &__rigth {
+                &__about {
+                    & h2 {
+                        font-size: 17px;
+                        line-height: 20px;
+                        padding-bottom: 12px;
+                    }
+                }
+    
+                &__sena {
+                    & h3 {
+                        font-size: 15px;
+                        line-height: 18px;
+                        padding-bottom: 12px;
+                    }
+                }
+    
+                &__star {
+                    gap: 20px;
+                    padding-bottom: 12px;
+    
+                    &__flex {
+                        gap: 10px;
+    
+                        & img {
+                            width: 15px;
+                            height: 15px;
+                        }
+    
+                    }
+                }
+    
+                &__opicayne {
+                    padding-bottom: 12px;
+    
+                    & p {
+                        width: 300px;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+    
+                &__btn {
+                    padding-top: 16px;
+                    gap: 20px;
+    
+                    & button {
+                        padding: 8px 15px;
+                        gap: 10px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 16px;
+    
+                        & img {
+                            width: 16px;
+                        }
+    
+                        &:first-child {
+                            color: white;
+                            background: #B4D51E;
+                        }
+    
+                        &:nth-child(2) {
+                            padding: 8px 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:600px){
+    .bookfullInfo {
+        padding: 20px 20px;
+    
+        &__title {
+            padding-bottom: 40px;
+    
+            & h2 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    
+        &__item {
+            gap: 20px;
+    
+            &__left {
+                &__card {
+                    padding: 30px;
+    
+                    &__img {
+                        width: 150px;
+                        & mg{
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+    
+            &__rigth {
+                &__about {
+                    & h2 {
+                        font-size: 17px;
+                        line-height: 20px;
+                        padding-bottom: 12px;
+                    }
+                }
+    
+                &__sena {
+                    & h3 {
+                        font-size: 15px;
+                        line-height: 18px;
+                        padding-bottom: 12px;
+                    }
+                }
+    
+                &__star {
+                    gap: 20px;
+                    padding-bottom: 12px;
+    
+                    &__flex {
+                        gap: 10px;
+    
+                        & img {
+                            width: 15px;
+                            height: 15px;
+                        }
+    
+                    }
+                }
+    
+                &__opicayne {
+                    padding-bottom: 12px;
+    
+                    & p {
+                        width: 220px;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+    
+                &__btn {
+                    padding-top: 16px;
+                    gap: 20px;
+    
+                    & button {
+                        padding: 8px 15px;
+                        gap: 10px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 16px;
+    
+                        & img {
+                            width: 16px;
+                        }
+    
+                        &:first-child {
+                            color: white;
+                            background: #B4D51E;
+                        }
+    
+                        &:nth-child(2) {
+                            padding: 8px 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:500px){
+    .bookfullInfo {
+        padding: 20px 20px;
+    
+        &__title {
+            padding-bottom: 20px;
+    
+            & h2 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    
+        &__item {
+            gap: 15px;
+    
+            &__left {
+                &__card {
+                    padding: 0px;
+                    box-shadow: none;   
+                    &__img {
+                        width: 120px;
+                        & img{
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+    
+            &__rigth {
+                &__about {
+                    & h2 {
+                        font-size: 16px;
+                        line-height: 18px;
+                        padding-bottom: 10px;
+                    }
+                }
+    
+                &__sena {
+                    & h3 {
+                        font-size: 13px;
+                        line-height: 15px;
+                        padding-bottom: 10px;
+                    }
+                }
+    
+                &__star {
+                    gap: 10px;
+                    padding-bottom: 10px;
+                    font-size: 13px;
+                    &__flex {
+                        gap: 7px;
+    
+                        & img {
+                            width: 13px;
+                            height: 13px;
+                        }
+                        
+                    }
+                }
+    
+                &__opicayne {
+                    padding-bottom: 10px;
+    
+                    & p {
+                        width: 200px;
+                        font-size: 13px;
+                        line-height: 15px;
+                    }
+                }
+    
+                &__btn {
+                    padding-top: 10px;
+                    display: block;
+    
+                    & button {
+                        padding: 8px 15px;
+                        gap: 10px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 16px;
+    
+                        & img {
+                            width: 16px;
+                        }
+    
+                        &:first-child {
+                            margin-bottom: 10px;
+                            color: white;
+                            background: #B4D51E;
+                        }
+    
+                        &:nth-child(2) {
+                            padding: 8px 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:450px) {
+    .bookfullInfo {
+        padding: 10px 20px;
+
+        &__title {
+            & h2 {
+                display: none;
+            }
+
+            &__mobil {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__left {
+                    & img {
+                        cursor: pointer;
+                        width: 21px;
+                        height: auto;
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+                }
+
+                &__rigth {
+                    &__ul {
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
+                        list-style: none;
+
+                        &__li {
+                            cursor: pointer;
+                            & img {
+                                height: 16px;
+                                width: auto;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__item {
+            gap: 20px;
+
+            &__left {
+                &__card {
+                    padding: 0;
+                    box-shadow: none;
+                    overflow: hidden;
+                    border-radius: 8px;
+
+                    & img {
+                        width: 100px;
+                        height: auto;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            &__rigth {
+                &__about {
+                    & h2 {
+                        font-size: 18px;
+                        line-height: 20px;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                &__sena {
+                    & h3 {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                &__star {
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    gap: 25px;
+
+                    &__flex {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 12px;
+
+                        & img {
+                            width: 13px;
+                            height: 13px;
+                            display: inline-block;
+                        }
+                    }
+
+                    &__text {
+                        & p {
+                            display: none;
+
+                        }
+
+                        &__mobil {
+                            display: block;
+
+                            & h4 {
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 24px;
+                                /* identical to box height, or 120% */
+
+
+                                color: #463C74;
+                            }
+                        }
+                    }
+                }
+
+                &__opicayne {
+                    display: none;
+                }
+
+                &__btn {
+                    display: none;
+                }
+            }
+        }
+
+        &__body {
+            display: block;
+
+            &__btn {
+                display: block;
+
+                & button {
+                    width: 100%;
+                    padding: 10px 20px;
+                    background: #8BAA01;
+                    box-shadow: 0px 10px 15px rgba(90, 189, 90, 0.501961);
+                    border-radius: 10px;
+                    border: none;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    letter-spacing: 0.016em;
+                    color: #FFFFFF;
+                }
+            }
+
+            & h2 {
+                padding-top: 40px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 21px;
+                line-height: 24px;
+                color: #463C74;
+                padding-bottom: 9px;
+            }
+
+            & p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: rgba(70, 60, 116, 0.8);
+            }
+        }
+    }
+}

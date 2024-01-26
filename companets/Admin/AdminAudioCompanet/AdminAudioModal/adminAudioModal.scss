@@ -1,0 +1,222 @@
+.adminAudio__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background: linear-gradient(192.04deg, rgba(63, 55, 55, 0.09) 0%, rgba(255, 255, 255, 0.0333) 100%);
+    backdrop-filter: blur(4.5px);
+    z-index: 800;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+
+    &__item {
+        background-color: white;
+        width: 900px;
+        padding: 30px;
+        border-radius: 30px;
+        height: 450px;
+        overflow: hidden;
+
+        &__title {
+            & h2 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 30px;
+                color: #463C74;
+                padding-bottom: 30px;
+                text-align: center;
+            }
+        }
+
+        &__body {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            &__left {
+                & h2 {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #463C74;
+                    padding-bottom: 20px;
+                }
+
+                &__img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    gap: 10px;
+                    width: 300px;
+                    height: 80px;
+                    padding-bottom: 20px;
+
+                    & img {
+                        height: 80px;
+                    }
+                }
+
+                &__audios {
+                    padding: 20px 10px;
+                    border: 1px solid #ddd;
+                    min-height: 0;
+                    display: flex;
+                    flex-direction: column;
+                    height: 150px;
+                    overflow-x: inherit;
+                    overflow-y: visible;
+
+                    &__items {
+                        max-height: 240px;
+                        overflow: hidden;
+
+                        &__item {
+                            height: 100%;
+                            overflow: auto;
+
+                            &__audio {
+                                border-bottom: 1px solid #ddd;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: black;
+                                padding: 7px 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                &__name {
+                                    & p {
+                                        font-size: 17px;
+                                        color: #463C74;
+                                        font-weight: 500;
+                                        letter-spacing: 1px;
+                                    }
+                                }
+
+                                &__delete {
+                                    & button {
+                                        font-size: 16px;
+                                        color: #ffffff;
+                                        font-weight: 500;
+                                        letter-spacing: 1px;
+                                        background-color: red;
+                                        border-radius: 10px;
+                                        padding: 4px 15px;
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & h2 {
+                        border-bottom: 1px solid #000000;
+                        padding: 0;
+                    }
+
+
+                }
+            }
+
+            &__rigth {
+                &__micrafon {
+                    margin-top: 20px;
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    cursor: pointer;
+                    overflow: hidden;
+
+                    & img {
+                        width: 100px;
+                        height: auto;
+                    }
+
+                    &:hover {
+                        background-color: #a395e0;
+                    }
+
+                    &__input {
+                        & input {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                &__input {
+                    & h3 {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 20px;
+                        color: #000000;
+                        padding-bottom: 10px;
+                    }
+
+                    & input {
+                        display: block;
+                        background: #FFFFFF;
+                        border: 1px solid #aaaab2;
+                        border-radius: 10px;
+                        letter-spacing: 1px;
+                        padding: 6px 20px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 17px;
+                        color: rgba(20, 20, 21, 0.5);
+                    }
+                }
+
+                &__avtor {
+                    padding-top: 20px;
+
+                    & h3 {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 20px;
+                        color: #000000;
+                        padding-bottom: 10px;
+                    }
+
+                    & select {
+                        order: 1px solid #aaaab2;
+                        border-radius: 10px;
+                        letter-spacing: 1px;
+                        padding: 6px 20px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 17px;
+                        color: rgba(20, 20, 21, 0.5);
+                    }
+                }
+            }
+        }
+    }
+}

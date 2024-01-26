@@ -1,0 +1,93 @@
+.adminSiginIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f3;
+    min-height: 100vh;
+    & .main{
+        height: 600px;
+        width: 600px;
+        background-color: #ecf0f3;
+        transition: .25s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 600px;
+        max-width: 600px;
+        min-height: 600px;
+        box-shadow: 10px 10px 10px #d1d9e6, -10px -10px 10px #ffffff;
+
+        & .form{
+            height: 100%;
+            width: 100%;
+            display: block;
+            text-align: center;
+            opacity: .6;
+            align-items: center;
+            & i:hover{
+                opacity: 1;
+            }
+            &__input{
+                display: flex;
+                justify-content: center;
+                & input{
+                cursor: pointer;
+                height: 40px;
+                font-size: 13px;
+                display:block;
+                width: 350px;
+                padding: 0px  20px;
+                margin: 6px 0;
+                border: none;
+                letter-spacing: 0.15px;
+                outline: none;
+                background-color: #ecf0f3;
+                border-radius: 8px;
+                box-shadow: inset 2px 2px 4px #d1d9e6,inset -2px -2px 4px #f9f9f9;
+            }
+        }
+            & i{
+                margin: 0 0 55px 0;
+                font-size: 4em;
+                color: red;
+                cursor: pointer;
+                transform: scale(.9);
+            }
+            & h2{
+                font-size: 1.8em;
+                padding: 20px 0;
+            }
+            & button{
+                margin-top: 10px;
+                padding: 15px 30px;
+                background-color: rgb(0, 0, 255);
+                border: none;
+                border-radius: 30px;
+                color: white;
+                font-size: 18px;
+                cursor: pointer;
+                opacity: 1;
+                transition: .1s;
+                &:active{
+                    transform: scale(.7);
+                    transition: .1s;
+                }
+            }
+            & h3{
+                display: none;
+                color:  rgb(214, 66, 66);
+                width: 350px;
+                text-align: left;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

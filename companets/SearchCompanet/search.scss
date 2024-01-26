@@ -1,0 +1,85 @@
+.search1 {
+    height: 100vh;
+    opacity: 0;
+    overflow: hidden;
+}
+
+@media (max-width:450px) {
+    .search1 {
+        opacity: 1;
+        overflow: auto;
+        height: auto;
+
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 20px 10px;
+            border-bottom: 1px solid #ddd;
+
+            & button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            &__input {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                width: 100%;
+                position: relative;
+                &__close{
+                    position: absolute;
+                    right: 20px;
+                }
+                & input {
+                    width: 80%;
+                    display: block;
+                    padding: 7px 30px;
+                    font-size: 14px;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        &__items {
+            margin: 10px 20px;
+            display: block;
+            margin-bottom: 100px;
+
+            &__clear {
+                &__book {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 7px 0px;
+                    border-bottom: 1px solid #ddd;
+                    cursor: pointer;
+
+                    &__left {
+                        & img {
+                            height: 60px;
+                            width: 40px;
+                        }
+                    }
+
+                    &:last-child {
+                        border: none;
+                    }
+                    &__name{
+                        & h2{
+                            font-size: 16px;
+                            letter-spacing: 1px;
+                            font-weight: 500;
+                        }
+                    }
+                    &:hover{
+                        background-color: #dddddd20;
+                    }
+                }
+            }
+        }
+    }
+}

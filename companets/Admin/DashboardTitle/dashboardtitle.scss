@@ -1,0 +1,94 @@
+.dashboardTitle {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        &__menu {
+            padding: 10px 12px;
+            background: rgba(104, 82, 199, 0.1);
+            border-radius: 7px;
+
+            & img {
+                width: 18px;
+                height: 18px;
+                display: inline-block;
+            }
+        }
+
+        &__input {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & span {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateX(20px) translateY(-50%);
+
+                & img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            & input {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 17px;
+                letter-spacing: 1px;
+                color: rgba(70, 60, 116, 0.5);
+                padding: 15px 47px;
+                width: 500px;
+                background: #FFFFFF;
+                border: 1px solid #F5F5F8;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    &__rigth {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        &__img {
+            display: flex;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #7f68e8;
+            align-items: center;
+            justify-content: center;
+
+            & img {
+                width: 38px;
+                height: 38px;
+                display: inline-block;
+            }
+        }
+
+        &__name {
+            & p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 20px;
+                color: #463C74;
+            }
+        }
+    }
+}

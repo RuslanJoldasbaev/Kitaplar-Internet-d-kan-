@@ -1,0 +1,84 @@
+.dashboard__card {
+    padding: 30px 32px;
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 20px;
+
+        &__item {
+            padding: 30px;
+            background: #FFFFFF;
+            box-shadow: -14px 18px 50px -20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+            &__title {
+                display: flex;
+                align-items: center;
+                gap: 45px;
+
+                &__left {
+                    background: rgba(104, 82, 199, 0.1);
+                    border-radius: 15px;
+                    padding: 22px;
+
+                    & img {
+                        width: 22px;
+                        height: 22px;
+                        display: inline-block;
+                    }
+                }
+
+                &__rigth {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    & span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        & img {
+                            height: 14px;
+                            width: auto;
+                            display: inline-block;
+                        }
+                    }
+
+                    & strong {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #36B273;
+                    }
+                }
+            }
+
+            &__body {
+                padding-top: 16px;
+
+                & h2 {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: #463C74;
+                }
+
+                & p {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: rgba(70, 60, 116, 0.5)
+                }
+            }
+        }
+    }
+}

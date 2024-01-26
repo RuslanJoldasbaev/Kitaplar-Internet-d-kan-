@@ -1,0 +1,322 @@
+.search {
+    position: relative;
+
+    &__input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            width: 590px;
+            padding: 12px 30px;
+            color: rgba(70, 60, 116, 0.5);
+            border: none;
+            background: #F8F7F5;
+            font-size: 16px;
+            border-radius: 8px;
+
+            &.active {
+                border: none;
+            }
+        }
+    }
+
+    &__elemet {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 120%;
+        z-index: 100;
+
+        &__books {
+
+            padding: 10px 10px;
+            background-color: white;
+            box-shadow: 0px 0px 30px rgba(201, 203, 209, 0.5);
+
+            & a {
+                text-decoration: none;
+            }
+
+            &__element {
+                border-bottom: 1px solid #ddd;
+
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                gap: 20px;
+                justify-content: left;
+
+                &__img {
+                    img {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+
+                &__price {
+                    & p {
+                        font-family: 'Merriweather';
+                        font-style: normal;
+                        font-size: 16px;
+                        color: #463C74;
+                    }
+
+                    width: 90px;
+                }
+
+                &__name {
+                    & h3 {
+                        font-size: 20px;
+                        line-height: 20px;
+                        font-family: "Intel", sans-serif;
+                        letter-spacing: 1px;
+                        font-weight: 400;
+                        color: #463C74;
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1300px) {
+    .search {
+        &__input {
+            & input {
+                width: 450px;
+                padding: 12px 27px;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:1100px) {
+    .search {
+        &__input {
+            & input {
+                width: 370px;
+                padding: 9px 27px;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .search {
+        &__input {
+            & input {
+                width: 320px;
+                padding: 12px 27px;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+        }
+        &__elemet {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 120%;
+            z-index: 100;
+    
+            &__books {
+    
+                padding: 10px 10px;
+                background-color: white;
+                box-shadow: 0px 0px 30px rgba(201, 203, 209, 0.5);
+    
+                & a {
+                    text-decoration: none;
+                }
+    
+                &__element {
+                    border-bottom: 1px solid #ddd;
+    
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    gap: 15px;
+                    justify-content: left;
+    
+                    &__img {
+                        img {
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+    
+                    &__price {
+                        min-width: 90px;
+                        & p {
+                            font-family: 'Merriweather';
+                            font-style: normal;
+                            font-size: 16px;
+                            color: #463C74;
+                        }
+    
+                        width: 90px;
+                    }
+    
+                    &__name {
+                        max-width: 170px;
+                        height: 20px;
+                        overflow: hidden;
+                        & h3 {
+                            font-size: 16px;
+                            line-height: 20px;
+                            font-family: "Intel", sans-serif;
+                            letter-spacing: 1px;
+                            font-weight: 400;
+                            color: #463C74;
+                        }
+                    }
+    
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .search {
+        &__input {
+            & input {
+                width: 300px;
+                padding: 12px 27px;
+                font-size: 16px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .search {
+        &__input {
+            & input {
+                width: 250px;
+                padding: 8px 20px;
+                font-size: 15px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:700px) {
+    .search {
+        &__input {
+            & input {
+                width: 180px;
+                padding: 8px 20px;
+                font-size: 14px;
+                border-radius: 8px;
+            }
+            
+        }
+        &__elemet {
+            position: absolute;
+            width: 120%;
+            left: 0;
+            top: 120%;
+            z-index: 100;
+    
+            &__books {
+                width: 100%;
+                padding: 10px 10px;
+                background-color: white;
+                box-shadow: 0px 0px 30px rgba(201, 203, 209, 0.5);
+    
+                & a {
+                    text-decoration: none;
+                }
+    
+                &__element {
+                    border-bottom: 1px solid #ddd;
+    
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    gap: 10px;
+                    justify-content: left;
+    
+                    &__img {
+                        img {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
+    
+                    &__price {
+                        min-width: 70px;
+                        & p {
+                            font-family: 'Merriweather';
+                            font-style: normal;
+                            font-size: 12px;
+                            color: #463C74;
+                        }
+    
+                        width: 70px;
+                    }
+    
+                    &__name {
+                        max-width: 170px;
+                        height: 20px;
+                        overflow: hidden;
+                        & h3 {
+                            font-size: 12px;
+                            line-height: 20px;
+                            font-family: "Intel", sans-serif;
+                            letter-spacing: 1px;
+                            font-weight: 400;
+                            color: #463C74;
+                        }
+                    }
+    
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    .search {
+        &__input {
+            & input {
+                width: 150px;
+                padding: 6px 15px;
+                font-size: 12px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+@media (max-width:450px) {
+    .search {
+        overflow: hidden;
+
+        &__item {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.slider{
+    &__items{
+        position: relative;
+        & .slick-dots{
+            position: absolute;
+            top: 101%;
+            
+            & li button{
+                width: 24px;
+                max-height: 6px ;
+                background: rgba(196, 196, 196, 0.5);
+                border-radius: 3px;
+                font-size: 0px;
+                padding: 0;
+                &::before{
+                    display: none;
+                }
+            }
+            & .slick-active button{
+                background-color: #B4D51E;;
+            }
+        }
+    }
+}
+
+
+@media (max-width:900px){
+    .slider{
+        &__items{
+            & .slick-dots{
+                top: 101%;
+                
+                & li button{
+                    width: 20px;
+                    max-height: 5px ;
+                    background: rgba(196, 196, 196, 0.5);
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:600px){
+    .slider{
+        &__items{
+            & .slick-dots{
+                top: 101%;
+                
+                & li button{
+                    width: 16px;
+                    max-height: 4px ;
+                    background: rgba(196, 196, 196, 0.5);
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:450px){
+    .slider{
+        &__items{
+            & .slick-dots{
+                display: none;
+                
+                & li button{
+                    width: 24px;
+                    max-height: 6px ;
+                    background: rgba(196, 196, 196, 0.5);
+                    border-radius: 3px;
+                    font-size: 0px;
+                    display: none;
+                    padding: 0;
+                    &::before{
+                        display: none;
+                    }
+                }
+                & .slick-active button{
+                    background-color: #B4D51E;;
+                    display: none;
+                }
+            }
+        }
+    }
+}
